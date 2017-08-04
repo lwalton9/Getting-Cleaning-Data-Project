@@ -59,16 +59,16 @@ names(finaltraintest_wact) <- gsub('\\.std',".StandardDeviation",names(finaltrai
 names(finaltraintest_wact) <- gsub('Freq\\.',"Frequency.",names(finaltraintest_wact))
 names(finaltraintest_wact) <- gsub('Freq$',"Frequency",names(finaltraintest_wact))
 
-
-
 #####SECOND TIDY DATASET WITh AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY ANd SUBJECT
-
-FinalTidySet <- aggregate(. ~subjectID + activityType, finaltraintest_wact, mean)
-head(FinalTidySet,n=12)
-FinalTidySet <- FinalTidySet[order(FinalTidySet$subjectID, FinalTidySet$activityID),]
-head(FinalTidySet,n=12)
-write.table(FinalTidySet, "./FinalTidySet.txt", row.names=TRUE)
-
+#FinalTidySet <- aggregate(. ~subjectID + activityType, finaltraintest_wact, mean)
+#head(FinalTidySet,n=12)
+FinalTidySet1 <- aggregate(. ~subjectID + activityType, finaltraintest_wact, mean)
+head(FinalTidySet1,n=12)
+#FinalTidySet <- FinalTidySet[order(FinalTidySet$subjectID, FinalTidySet$activityID),]
+FinalTidySet1 <- FinalTidySet1[order(FinalTidySet1$subjectID, FinalTidySet1$activityID),]
+head(FinalTidySet1,n=12)
+#write.table(FinalTidySet, "./FinalTidySet.txt", row.names=TRUE)
+write.table(FinalTidySet1, "./FinalTidySet1.txt", row.names=FALSE)
 
 
 
