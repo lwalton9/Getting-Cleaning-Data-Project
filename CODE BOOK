@@ -15,6 +15,8 @@ The gravitational force is assumed to have only low frequency components, theref
 From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 SOURCE DATA
+A full description is available at the site where the data was obtained:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones Here are the data for the project:https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
 Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and 
 Xavier Parra(2)1 - Smartlab - Non-Linear Complex Systems LaboratoryDITEN - Università  degli Studi di Genova, Genoa (I-16145), Italy. 
 2 - CETpD - Technical Research Centre for Dependency Care and Autonomous LivingUniversitat Politècnica de Catalunya (BarcelonaTech). 
